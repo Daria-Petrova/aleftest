@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+#app {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .input-wrapper {
+    border: 1px solid #dedede;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .input-label {
+    display: block;
+    padding: 2px;
+    color: #b1b1b1;
+  }
+  
+  .input-data {
+    padding: 2px;
+    color: #000000;
+    border: none;
+    outline: none;
+  }
+  
+  .list-title-wrapper {
+    display: inline-flex;
+  }
+  
+  .list-button {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #01A7FD;
+    width: 204px;
+    border-radius: 100px;
+    position: relative;
+    text-align:center;
+    vertical-align: middle;
+    padding: 10px 0;
+    box-sizing: border-box;
+    color: #01A7FD;
+    transition: border 0.3s, color 0.3s;
+  }
+
+  .list-button::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  .list-button:hover{
+    border: 3px solid #7c69e6;
+    color: #7c69e6;
+    transition: border 0.3s, color 0.3s;
+  }
+
+  .list-icon {
+    align-self: center;
+  }
+
+  .list-button-text {
+    font-family: 'Montserrat';
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 4px;
+  }

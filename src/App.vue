@@ -11,3 +11,6 @@ export default {
   components: {MainPage}
 }
 </script>
+
+<style src="./style/style.css">
+</style>

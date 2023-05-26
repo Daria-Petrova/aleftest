@@ -11,7 +11,19 @@
       <div class="list-wrapper">
         <div class="list-title-wrapper">
           <p class="list-title">Дети (макс.5)</p>
-          <button @click.prevent="addNewChild" v-if="childList.length < 5" class="list-button">Добавить ребёнка</button>
+                  
+          <button @click.prevent="addNewChild" v-if="childList.length<5" class="list-button">
+            <svg 
+              width="24"
+              height="24"
+              class="list-icon"
+              role="img">
+              <use xlink:href="../assets/plus-icon.svg#plus-icon"></use>
+          </svg>
+            <span class="list-button-text">
+              Добавить ребёнка
+            </span>
+            </button>
         </div>
         <div v-for="(child, index) in childList" :key="index" class="d-flex flex-row">
           <child-component
@@ -93,40 +105,5 @@
   }
   </script>
   
-  <style>
-  .form-wrapper {
-    margin: 0 auto;
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  .input-wrapper {
-    border: 1px solid #dedede;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .input-label {
-    display: block;
-    padding: 2px;
-    color: #b1b1b1;
-  }
-  
-  .input-data {
-    padding: 2px;
-    color: #000000;
-    border: none;
-    outline: none;
-  }
-  
-  .list-title-wrapper {
-    display: inline-flex;
-  }
-  
-  .list-button{
-    border: 3px solid #00b0ff;
-    padding: 2px 15px;
-    border-radius: 25%;
-  }
+  <style >
   </style>

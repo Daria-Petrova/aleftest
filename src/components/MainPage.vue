@@ -1,12 +1,11 @@
 <template>
     <div>
       <ul>
-        <li 
-          v-for="item in formList"
-          :key="item"
-          @click="current = item.name">{{ item.title }}</li>
+        <li v-for="item in formList" :key="item" @click="current = item.name">{{ item.title }}</li>
       </ul>
-      <component :is="current" :info="parentInformation" @parentInfo="getParentInfo"></component>
+      <KeepAlive>
+        <component :is="current" :info="parentInformation" @parentInfo="getParentInfo"></component>
+      </KeepAlive>
     </div>
   </template>
   
