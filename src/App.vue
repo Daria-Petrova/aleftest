@@ -1,10 +1,13 @@
 <template>
-  <div>Hello</div>
+  <main-page />
 </template>
 
 <script>
 
+import MainPage from "./components/MainPage.vue"
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {MainPage}
 }
 </script>
