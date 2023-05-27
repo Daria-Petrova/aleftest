@@ -10,8 +10,7 @@
       </div>
       <div class="list-wrapper">
         <div class="list-title-wrapper">
-          <p class="list-title">Дети (макс.5)</p>
-                  
+          <p class="list-title">Дети (макс.5)</p>     
           <button @click.prevent="addNewChild" v-if="childList.length<5" class="list-button">
             <svg 
               width="24"
@@ -19,23 +18,20 @@
               class="list-icon"
               role="img">
               <use xlink:href="../assets/plus-icon.svg#plus-icon"></use>
-          </svg>
-            <span class="list-button-text">
-              Добавить ребёнка
-            </span>
-            </button>
+            </svg><span class="list-button-text">Добавить ребёнка</span>
+          </button>
         </div>
-        <div v-for="(child, index) in childList" :key="index" class="d-flex flex-row">
+        <div v-for="(child, index) in childList" :key="index">
           <child-component
             @setName="updateChildName" 
             @setAge="updateChildAge" 
             :childIndex="index" 
             :childInfo="child"
           />
-          <button @click="removeChild(index)">Удалить</button>
+          <button @click.prevent="removeChild(index)" class="list-button-delete">Удалить</button>
         </div>
       </div>
-      <button class="bgbutton" @click.prevent="saveParentInfo" type="submit">Сохранить</button>
+      <button @click.prevent="saveParentInfo" type="submit" class="save-button">Сохранить</button>
     </form>
   </template>
   

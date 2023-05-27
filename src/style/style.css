@@ -4,9 +4,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
 .form-wrapper {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 616px;
     width: 100%;
   }
   
@@ -25,6 +30,7 @@
   
   .input-data {
     padding: 2px;
+    width: 260px;
     color: #000000;
     border: none;
     outline: none;
@@ -43,27 +49,24 @@
     position: relative;
     text-align:center;
     vertical-align: middle;
-    padding: 10px 0;
+    padding: 8px 0;
     box-sizing: border-box;
     color: #01A7FD;
-    transition: border 0.3s, color 0.3s;
-  }
-
-  .list-button::before{
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -4px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .list-button:hover{
-    border: 3px solid #7c69e6;
-    color: #7c69e6;
-    transition: border 0.3s, color 0.3s;
+    border: 3px solid #01A7FD;
+    color: #ffffff;
+    transition: border 0.3s, color 0.3s, background-color 0.3s;
+    background-color: #01A7FD;
   }
 
   .list-icon {
@@ -71,10 +74,57 @@
   }
 
   .list-button-text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     align-self: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     padding-left: 4px;
+  }
+
+  .list-button-delete {
+    color: #01A7FD;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .list-button-delete:hover {
+    color: #7c69e6;
+    transition: color 0.3s;
+  }
+
+  .save-button {
+    display: flex;
+    justify-content: center;
+    border: 3px solid #01A7FD;
+    width: 118px;
+    border-radius: 100px;
+    position: relative;
+    text-align:center;
+    vertical-align: middle;
+    padding: 8px 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #01A7FD;
+    transition: border 0.3s,background-color 0.3s;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .save-button:hover {
+    border: 3px solid #0970a3;
+    background-color: #0970a3;
+    transition: border 0.3s, background-color 0.3s;
   }
