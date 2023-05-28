@@ -53,7 +53,9 @@
   
   <style>
   .child-input.input-wrapper {
-    margin-right: 20px;
+    box-sizing: border-box;
+    margin-right: 18px;
+    width: 260px;
   }
   .wrap {
     display: inline-flex;

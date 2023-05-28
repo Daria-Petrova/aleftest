@@ -1,130 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 #app {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font);
 }
 
+:root{
+  --text-color: #111111;
+  --text-color-accent: #01A7FD;
+  --text-color-poor: #b1b1b1;
 
-*{
+  --main-color: #ffffff;
+
+  --font:'Montserrat', 'Arial', sans-serif;
+  --font-size: 14px;
+  --font-size-bigger: 16px;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
-.form-wrapper {
-    margin: 0 auto;
-    max-width: 616px;
-    width: 100%;
-  }
-  
-  .input-wrapper {
-    border: 1px solid #dedede;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .input-label {
-    display: block;
-    padding: 2px;
-    color: #b1b1b1;
-  }
-  
-  .input-data {
-    padding: 2px;
-    width: 260px;
-    color: #000000;
-    border: none;
-    outline: none;
-  }
-  
-  .list-title-wrapper {
-    display: inline-flex;
-  }
-  
-  .list-button {
-    display: flex;
-    justify-content: center;
-    border: 3px solid #01A7FD;
-    width: 204px;
-    border-radius: 100px;
-    position: relative;
-    text-align:center;
-    vertical-align: middle;
-    padding: 8px 0;
-    box-sizing: border-box;
-    color: #01A7FD;
-    background-color: #ffffff;
-    transition: border 0.3s, color 0.3s, background-color 0.3s;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    align-self: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .list-button:hover{
-    border: 3px solid #01A7FD;
-    color: #ffffff;
-    transition: border 0.3s, color 0.3s, background-color 0.3s;
-    background-color: #01A7FD;
-  }
-
-  .list-icon {
-    align-self: center;
-  }
-
-  .list-button-text {
-    font-family: 'Montserrat', sans-serif;
-    align-self: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    padding-left: 4px;
-  }
-
-  .list-button-delete {
-    color: #01A7FD;
-    border: none;
-    outline: none;
-    background-color: #ffffff;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .list-button-delete:hover {
-    color: #7c69e6;
-    transition: color 0.3s;
-  }
-
-  .save-button {
-    display: flex;
-    justify-content: center;
-    border: 3px solid #01A7FD;
-    width: 118px;
-    border-radius: 100px;
-    position: relative;
-    text-align:center;
-    vertical-align: middle;
-    padding: 8px 0;
-    box-sizing: border-box;
-    color: #ffffff;
-    background-color: #01A7FD;
-    transition: border 0.3s,background-color 0.3s;
-    cursor: pointer;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .save-button:hover {
-    border: 3px solid #0970a3;
-    background-color: #0970a3;
-    transition: border 0.3s, background-color 0.3s;
-  }

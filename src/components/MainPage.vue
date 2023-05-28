@@ -50,6 +50,7 @@
   </script>
 
 <style>
+
 .main-wrapper {
   display: grid;
   grid-template-areas:
@@ -75,6 +76,7 @@
   width: 80%;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 
@@ -84,7 +86,7 @@
   text-align: center;
 }
 
-.menu{
+.menu {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
